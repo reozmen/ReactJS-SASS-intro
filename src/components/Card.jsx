@@ -1,8 +1,9 @@
 import cardStyle from "../scss/card.module.scss";
 
-//* data propsunun props olarak alıyoruz ve map fonksiyonu ile döngüye sokuyoruz.
-
+//!----------------------------------------------------------------------------------------------------------------//
+//!----------------------------------------------------------------------------------------------------------------//
 //** */ Birinci Yöntem- data propsunu alıyoruz ve map fonksiyonu ile döngüye sokuyoruz. Ve döngü içindeki her bir item ın içindeki name, job, comment, img, id yi destructuring ile alıyoruz. Ve componenete yazdırıyoruz
+//*------------------------------------------BİRİNCİ YÖNTEM-----------------------------------------------------------*/
 // const Card = ({ data }) => {
 //   return (
 //     <div className={cardStyle["container"]}>
@@ -32,6 +33,9 @@ import cardStyle from "../scss/card.module.scss";
 //   );
 // };
 
+//!----------------------------------------------------------------------------------------------------------------//
+//!----------------------------------------------------------------------------------------------------------------//
+//*------------------------------------------İKİNCİ YÖNTEM-----------------------------------------------------------*/
 //** İkinci Yöntem: data propsunun içindeki name, job, comment, img, id yi destructuring ile alıyoruz. Ve componenete yazdırıyoruz
 const Card = ({ name, job, comment, img, id }) => {
   return (
