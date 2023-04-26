@@ -1,9 +1,13 @@
 import cardStyle from "../scss/card.module.scss";
 
+//* data propsunun props olarak alıyoruz ve map fonksiyonu ile döngüye sokuyoruz.
+
 const Card = ({ data }) => {
   return (
     <div className={cardStyle["container"]}>
       {data.map((item) => {
+        //* item ın içindeki name, job, comment, img, id yi destructuring ile alıyoruz.
+
         const { name, job, comment, img, id } = item;
         return (
           <div className={cardStyle["card"]} key={id}>
