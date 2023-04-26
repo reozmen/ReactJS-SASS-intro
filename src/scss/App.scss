@@ -1,5 +1,7 @@
 @import "./reset", "./variables";
 
+//** reset ve variables dosyalarını import ediyoruz. tüm alt dosyalarda kullanacağımız CSS verileri bulunduğu için ana componentimizin css dosyasına import etmek best practice olarak kabul edilir.
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: aliceblue;
