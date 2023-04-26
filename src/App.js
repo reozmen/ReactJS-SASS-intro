@@ -10,7 +10,16 @@ function App() {
   return (
     <div>
       <Header />
-      <Card data={data} />
+      {/* //*Birinci yöntem -- data dosyasının tamamını Card componenetine props olarak gönderiyoruz*/}
+      {/* <Card data={data} /> */}
+
+      {/* //*İkinci yöntem -- data dosyasını map ile itera edip data içindeki item ların elemanlarını props olarak gönderiyoruz*/}
+      {data.map((item) => {
+        const { name, job, comment, img, id } = item;
+        return (
+          <Card key={id} name={name} job={job} comment={comment} img={img} />
+        );
+      })}
       <Footer />
     </div>
   );
