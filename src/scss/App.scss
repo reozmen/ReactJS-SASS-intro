@@ -2,6 +2,7 @@
 
 //** reset ve variables dosyalarını import ediyoruz. tüm alt dosyalarda kullanacağımız CSS verileri bulunduğu için ana componentimizin css dosyasına import etmek best practice olarak kabul edilir.
 
+//** App.scss in isminin büyük harfle başlamasının bir özelliği yoktur. Ana componentimizin ismi olduğu için büyük harfle başlattık, küçük harflerle de başlatabilirdik.
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: aliceblue;
