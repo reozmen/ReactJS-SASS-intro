@@ -1,5 +1,10 @@
 @import "./variables";
 
+//*  variables.scss i import ettik , böylece variables.scss deki değişkenleri kullanabiliriz.
+//* değişkenleri kullanırken $ işareti ile başlatıyoruz.
+//? örneğin pink değişkenini kullanmak için
+//* $pink yazıyoruz.
+
 header {
   background-color: $pink;
   padding: 3rem;
